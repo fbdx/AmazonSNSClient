@@ -1,0 +1,7 @@
+{
+    "name": "AmazonSNSClient",
+    "version": "0.0.1",
+    "author": "Jinesh Varia <jvaria@amazon.com>",
+    "license": "Apache 2.0 license",
+    "description": "Amazon SNS Client for Spark Core."
+}
