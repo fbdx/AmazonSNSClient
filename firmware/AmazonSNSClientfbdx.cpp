@@ -1,4 +1,4 @@
-#include "AmazonSNSClient.h"
+#include "AmazonSNSClientfbdx.h"
 #include "AWSFoundationalTypes.h"
 #include <stdlib.h>
 #include "Utils.h"

@@ -3,7 +3,7 @@
 */
 
 #include "application.h"
-#include "AmazonSNSClient/AmazonSNSClient.h"
+#include "AmazonSNSClient/AmazonSNSClientfbdx.h"
 #include "AmazonSNSClient/SparkAWSImplementations.h"
 #include "AmazonSNSClient/AWSFoundationalTypes.h"
 #include "AmazonSNSClient/keys.h"
