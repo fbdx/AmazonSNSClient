@@ -128,7 +128,7 @@ PublishOutput AmazonSNSClient::publish(PublishInput publishInput, ActionError& a
         dateTimeProvider->sync(time);
 
         actionError = CONNECTION_ACTIONERROR;
-        errorMessage = response;
+        this->errorMessage = response;
         return publishOutput;
     }
     
