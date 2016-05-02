@@ -134,6 +134,7 @@ PublishOutput AmazonSNSClient::publish(PublishInput publishInput, ActionError& a
         actionError = CONNECTION_ACTIONERROR;
         
     }
-    publishOutput.setMessageId(httpStatusCode);        
+    actionError = httpStatusCode;
+    publishOutput.setMessageId(response);        
 	return publishOutput;
 }
