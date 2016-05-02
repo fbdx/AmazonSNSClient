@@ -1,6 +1,6 @@
 {
     "name": "AmazonSNSClientfbdx",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Adrian Lim <adrian.lbs@gmail.com>",
     "license": "Apache 2.0 license",
     "description": "Amazon SNS Client for Spark Core."
