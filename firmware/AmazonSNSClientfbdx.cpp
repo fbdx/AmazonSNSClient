@@ -126,6 +126,10 @@ PublishOutput AmazonSNSClient::publish(PublishInput publishInput, ActionError& a
         char* time = new char[15]();
         sprintf(time, "%.8s%.6s", newts, newts + 9);
         dateTimeProvider->sync(time);
+
+        actionError = CONNECTION_ACTIONERROR;
+        errorMessage = response;
+        return publishOutput;
     }
     
 	return publishOutput;
