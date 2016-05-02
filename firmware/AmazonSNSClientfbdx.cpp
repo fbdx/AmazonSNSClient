@@ -63,6 +63,10 @@ void PublishOutput::setMessageId(MinimalString messageId) {
 	this->messageId = messageId;
 }
 
+void PublishOutput::setErrorMessage(MinimalString errormessage) {	
+	this->errorMessage = errormessage;
+}
+
 MinimalString PublishOutput::getMessageId() const {
 	return this->messageId;
 }
@@ -128,7 +132,7 @@ PublishOutput AmazonSNSClient::publish(PublishInput publishInput, ActionError& a
         dateTimeProvider->sync(time);
 
         actionError = CONNECTION_ACTIONERROR;
-        this->errorMessage = response;
+        publishOutput.setMessageId(response);        
         return publishOutput;
     }
     
