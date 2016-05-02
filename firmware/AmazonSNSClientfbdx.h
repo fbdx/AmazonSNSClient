@@ -30,7 +30,7 @@ public:
     MinimalString getErrorType() const;
     MinimalString getErrorMessage() const;
     void setMessageId(MinimalString messageId);
-    void setErrorMsg(MinimalString errormessage);
+    void setErrorMessage(MinimalString errormessage);
     MinimalString getMessageId() const;
 };
 
